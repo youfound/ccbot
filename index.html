@@ -1,0 +1,2364 @@
+<html>
+  <div
+    id="in-page-channel-node-id"
+    data-channel-name="in_page_channel_fnDx9D"
+  ></div>
+  <!-- .___  ___.      ___      .__   __.   _______   ______    __    __  ____    ____  __  .______      ______   ______   .___  ___. 
+|   \/   |     /   \     |  \ |  |  /  _____| /  __  \  |  |  |  | \   \  /   / |  | |   _  \    /      | /  __  \  |   \/   | 
+|  \  /  |    /  ^  \    |   \|  | |  |  __  |  |  |  | |  |__|  |  \   \/   /  |  | |  |_)  |  |  ,----'|  |  |  | |  \  /  | 
+|  |\/|  |   /  /_\  \   |  . `  | |  | |_ | |  |  |  | |   __   |   \_    _/   |  | |   ___/   |  |     |  |  |  | |  |\/|  | 
+|  |  |  |  /  _____  \  |  |\   | |  |__| | |  `--'  | |  |  |  |     |  |     |  | |  |     __|  `----.|  `--'  | |  |  |  | 
+|__|  |__| /__/     \__\ |__| \__|  \______|  \______/  |__|  |__|     |__|     |__| | _|    (__)\______| \______/  |__|  |__|
+
+ -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>CcbotTrade</title>
+    <link
+      rel="icon"
+      href="https://ccbot.trade/images/cc-icon.png"
+      type="image/ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <link rel="stylesheet" href="assets/more.css" />
+    <style>
+      @media screen and (min-width: 767px) {
+        #calculate .calc-item__value {
+          max-width: 100%;
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (min-width: 1230px) {
+        #calculate .calc-item__value {
+          max-width: 100%;
+          font-size: 24px;
+        }
+      }
+
+      @media screen and (min-width: 1400px) {
+        #calculate .calc-item__value {
+          max-width: 100%;
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="layout" role="main" style="opacity: 1">
+      <header class="header" style="opacity: 1">
+        <div class="container">
+          <div class="header__row">
+            <a class="header__logo" href="?a=home"
+              ><img src="images/cc-logo.png" alt=""
+            /></a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li>
+                  <a class="header__nav-link" href="?a=home#about">About Us</a>
+                </li>
+                <li>
+                  <a class="header__nav-link" href="?a=home#pricing"
+                    >Profitability</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav-link" href="?a=home#calculate"
+                    >Calculator</a
+                  >
+                </li>
+
+                <li>
+                  <a class="header__nav-link" href="?a=home#referral"
+                    >For partners</a
+                  >
+                </li>
+                <li><a class="header__nav-link" href="?a=home#faq">FAQ</a></li>
+                <li>
+                  <a class="header__nav-link" href="?a=support">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__buttons hide-sm">
+              <div class="language-module js-dropdown">
+                <div class="language-module__link">
+                  <span>Eng</span>
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom-select"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="language-module__dropdown">
+                  <div class="language-module__dropdown-cross">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#close"
+                      ></use>
+                    </svg>
+                  </div>
+                  <ul
+                    class="language-module__dropdown-list"
+                    data-simplebar="init"
+                  >
+                    <div class="simplebar-wrapper" style="margin: 0px">
+                      <div class="simplebar-height-auto-observer-wrapper">
+                        <div class="simplebar-height-auto-observer"></div>
+                      </div>
+                      <div class="simplebar-mask">
+                        <div
+                          class="simplebar-offset"
+                          style="right: 0px; bottom: 0px"
+                        >
+                          <div
+                            class="simplebar-content-wrapper"
+                            tabindex="0"
+                            role="region"
+                            aria-label="scrollable content"
+                            style="height: auto; overflow: hidden"
+                          >
+                            <div class="simplebar-content" style="padding: 0px">
+                              <li>
+                                <a href="?language=default">
+                                  <img
+                                    src="images/country/united-kingdom.svg"
+                                    alt=""
+                                  /><span>English</span></a
+                                >
+                              </li>
+                              <li style="display: none">
+                                <a href="?language=de">
+                                  <img
+                                    src="images/country/germany.svg"
+                                    alt=""
+                                  /><span>Deutch</span></a
+                                >
+                              </li>
+                              <li style="display: none">
+                                <a href="?language=ru">
+                                  <img
+                                    src="images/country/russia.svg"
+                                    alt=""
+                                  /><span>Russian</span></a
+                                >
+                              </li>
+                              <li style="display: none">
+                                <a href="?language=sp">
+                                  <img
+                                    src="images/country/spain.svg"
+                                    alt=""
+                                  /><span>Spanish</span></a
+                                >
+                              </li>
+                              <li style="display: none">
+                                <a href="?language=vi">
+                                  <img
+                                    src="images/country/vietnam.svg"
+                                    alt=""
+                                  /><span>Vietnamese</span></a
+                                >
+                              </li>
+                              <li style="display: none">
+                                <a href="?language=ch">
+                                  <img
+                                    src="images/country/china.svg"
+                                    alt=""
+                                  /><span>Chinese</span></a
+                                >
+                              </li>
+                              <l style="display: none" i=""
+                                ><a href="?language=" pt="">
+                                  <img
+                                    src="images/country/portugal.svg"
+                                    alt=""
+                                  /><span>Portuguese</span></a
+                                >
+
+                                <l style="display: none" i=""
+                                  ><a href="?language=ar">
+                                    <img
+                                      src="images/country/saudi-arabia.svg"
+                                      alt=""
+                                    /><span>Arab</span></a
+                                  >
+
+                                  <li style="display: none">
+                                    <a href="?language=tu">
+                                      <img
+                                        src="images/country/turkey.svg"
+                                        alt=""
+                                      /><span>Turkish</span></a
+                                    >
+                                  </li>
+                                  <li style="display: none">
+                                    <a href="?language=jp">
+                                      <img
+                                        src="images/country/japan.svg"
+                                        alt=""
+                                      /><span>Japanese</span></a
+                                    >
+                                  </li>
+                                  <li style="display: none">
+                                    <a href="?language=it">
+                                      <img
+                                        src="images/country/italy.svg"
+                                        alt=""
+                                      /><span>Italian</span></a
+                                    >
+                                  </li>
+                                  <li style="display: none">
+                                    <a href="?language=fr">
+                                      <img
+                                        src="images/country/france.svg"
+                                        alt=""
+                                      /><span>French</span></a
+                                    >
+                                  </li>
+                                  <li style="display: none">
+                                    <a href="?language=in">
+                                      <img
+                                        src="images/country/indonesia.svg"
+                                        alt=""
+                                      /><span>Indonesian</span></a
+                                    >
+                                  </li>
+                                </l>
+                              </l>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="simplebar-placeholder"
+                        style="width: 173px; height: 47px"
+                      ></div>
+                    </div>
+                    <div
+                      class="simplebar-track simplebar-horizontal"
+                      style="visibility: hidden"
+                    >
+                      <div
+                        class="simplebar-scrollbar"
+                        style="width: 0px; display: none"
+                      ></div>
+                    </div>
+                    <div
+                      class="simplebar-track simplebar-vertical"
+                      style="visibility: hidden"
+                    >
+                      <div
+                        class="simplebar-scrollbar"
+                        style="height: 0px; display: none"
+                      ></div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+              <a class="link" href="/login">
+                <svg class="svg-icon">
+                  <use
+                    href="icons/symbol/svg/sprite.symbol.svg#lock"
+                  ></use></svg
+                ><span>Login</span></a
+              >
+              <a
+                class="btn header__btn"
+                href="https://ccbot.trade/?ref=administrator"
+                >Get started</a
+              >
+            </div>
+            <div id="menu-toggle">
+              <div id="hamburger">
+                <span> </span><span> </span><span> </span>
+              </div>
+              <div id="cross"><span> </span><span> </span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!---->
+      <section class="intro" style="opacity: 1">
+        <div class="container">
+          <div class="intro__row row">
+            <div class="intro__col col col-12 col-md-6">
+              <h1 class="title intro__title">
+                Cryptocurrency arbitrage with a profit of up to 3% per day
+              </h1>
+              <div class="intro__description">
+                <p>
+                  CcbotTrade works with cryptocurrency arbitrage using an
+                  arbitration bot created by our software developers.
+                </p>
+              </div>
+              <div class="intro__buttons">
+                <a
+                  class="btn btn--large intro__btn"
+                  href="https://ccbot.trade/?ref=administrator"
+                  ><span>Get Started</span>
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#arrow-right-circle"
+                    ></use></svg
+                ></a>
+                <a class="btn btn--large intro__btn" href="/login"
+                  ><span>login</span>
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#arrow-right-circle"
+                    ></use></svg
+                ></a>
+              </div>
+              <div class="connect">
+                <a
+                  class="connect__link"
+                  href="https://t.me/+Xz_6evnXevA4YTdk"
+                  target="_blank"
+                >
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#telegram"
+                    ></use></svg
+                  ><span>Telegram Channel</span></a
+                ><a
+                  class="connect__link connect__link--opacity"
+                  href="https://t.me/Ccbotsupport"
+                  target="_blank"
+                >
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#telegram"
+                    ></use></svg
+                  ><span>Telegram Support</span></a
+                >
+              </div>
+              <!--<div class="connect tgc">
+
+                        <a class="connect__link connect__link--opacity tga "
+                                href="https://t.me/+5Itx3eypkoY0MGY0" target="_blank">
+                                <svg class="svg-icon">
+                                    <use href="icons/symbol/svg/sprite.symbol.svg#telegram"></use>
+                                </svg><span class=="tgs">Telegram Group</span></a>
+                        </div>-->
+
+              <style>
+                a.connect__link.connect__link--opacity.tga {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                .connect.tgc {
+                  position: fixed;
+                  z-index: 100000000000000;
+                  right: -50px;
+                  top: 35%;
+                  transform: rotate(90deg);
+                  background: linear-gradient(45deg, #ffffff, #d6d7f2);
+                  box-shadow: 0 0 10px #ccc;
+                }
+                a.connect__link.connect__link--opacity.tga svg.svg-icon {
+                  transform: rotate(-80deg);
+                }
+              </style>
+            </div>
+            <div class="intro__col intro__col--media col col-12 col-md-6">
+              <div
+                class="intro-media"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  transform: translate(0px, 0px);
+                "
+              >
+                <img
+                  src="images/intro/1.svg"
+                  alt=""
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    visibility: inherit;
+                  "
+                /><img
+                  src="images/intro/2.svg"
+                  alt=""
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    visibility: inherit;
+                  "
+                /><img
+                  src="images/intro/3.svg"
+                  alt=""
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, 0px);
+                    opacity: 1;
+                    visibility: inherit;
+                  "
+                />
+                <div
+                  class="intro-media__block"
+                  style="background-image: url('images/intro/media.png')"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+      <section class="statistics" style="opacity: 1">
+        <div class="container">
+          <div class="statistics__row row">
+            <div class="statistics__col col col-12 col-md-4 col-lg-3">
+              <div class="statistics__text">
+                <p>Online Days</p>
+                <p>28</p>
+              </div>
+            </div>
+            <div class="statistics__col col col-12 col-md-8 col-lg-9">
+              <div
+                class="statistics__swiper swiper-container swiper-no-swiping js-statistics-swiper swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress swiper-backface-hidden"
+              >
+                <style>
+                  @media (max-width: 700px) {
+                    div#swiper-wrapper-bc189eda6a56ef5b {
+                      display: flex;
+                      width: 100%;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                    }
+
+                    .swiper-slide.swiper-slide-visible {
+                      margin-bottom: 30px;
+                    }
+                  }
+                </style>
+                <div
+                  class="swiper-wrapper"
+                  id="swiper-wrapper-bc189eda6a56ef5b"
+                  aria-live="polite"
+                >
+                  <div
+                    class="swiper-slide swiper-slide-visible swiper-slide-next"
+                    role="group"
+                    aria-label="1 / 3"
+                    style="width: 272.333px; margin-right: 15px"
+                  >
+                    <div class="statistics-item">
+                      <div class="statistics-item__value">$745870.93</div>
+                      <div class="statistics-item__description">
+                        Total Invested
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group"
+                                    aria-label="2 / 3" style="width: 272.333px; margin-right: 15px;">
+                                    <div class="statistics-item">
+                                        <div class="statistics-item__value">                                            
+                                            $6329.57                                         </div>
+                                        <div class="statistics-item__description">Total Withdraw
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group"
+                                    aria-label="3 / 3" style="width: 272.333px; margin-right: 15px;">
+                                    <div class="statistics-item">
+                                        <div class="statistics-item__value">                                            
+                                            200                                         </div>
+                                        <div class="statistics-item__description">Total Users
+                                        </div>
+                                    </div>
+                                </div>-->
+                </div>
+                <span
+                  class="swiper-notification"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---->
+      <section class="company" id="about" style="opacity: 0">
+        <div class="container">
+          <div class="company__top row">
+            <div class="company__top-col col col-12 col-lg-3">
+              <h5 class="subtitle company__subtitle">Our company</h5>
+            </div>
+            <div class="company__top-col col col-12 col-lg-9">
+              <h3 class="title company__title">
+                Benefits of arbitrage trading with a bot.
+              </h3>
+            </div>
+          </div>
+          <div
+            class="company__swiper swiper-container swiper-no-swiping js-company-swiper swiper-initialized swiper-horizontal swiper-autoheight swiper-watch-progress swiper-backface-hidden"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-2382f8e47c527c10d"
+              aria-live="polite"
+              style="height: 280px; transform: translate3d(0px, 0px, 0px)"
+            >
+              <div
+                class="swiper-slide swiper-slide-visible swiper-slide-active"
+                role="group"
+                aria-label="1 / 4"
+                style="width: 272.75px; margin-right: 15px"
+              >
+                <div class="advantage-item">
+                  <div class="advantage-item__icon">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#speed"
+                      ></use>
+                    </svg>
+                  </div>
+                  <h5 class="advantage-item__title">Speed</h5>
+                  <div class="advantage-item__description">
+                    <p>
+                      It can take a few minutes from opening a deal to making a
+                      profit, unlike classic crypto trading.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible swiper-slide-next"
+                role="group"
+                aria-label="2 / 4"
+                style="width: 272.75px; margin-right: 15px"
+              >
+                <div class="advantage-item">
+                  <div class="advantage-item__icon">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#chart-down"
+                      ></use>
+                    </svg>
+                  </div>
+                  <h5 class="advantage-item__title">Minimal risks</h5>
+                  <div class="advantage-item__description">
+                    <p>
+                      All risks of loss are reduced to almost zero with the
+                      timely purchase and sale of crypto assets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="3 / 4"
+                style="width: 272.75px; margin-right: 15px"
+              >
+                <div class="advantage-item">
+                  <div class="advantage-item__icon">
+                    <svg class="svg-icon">
+                      <use href="icons/symbol/svg/sprite.symbol.svg#time"></use>
+                    </svg>
+                  </div>
+                  <h5 class="advantage-item__title">Work 24/7</h5>
+                  <div class="advantage-item__description">
+                    <p>
+                      Our crypto bot scans quotes of cryptocurrencies on
+                      different exchanges around the clock to identify the most
+                      suitable bundles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="4 / 4"
+                style="width: 272.75px; margin-right: 15px"
+              >
+                <div class="advantage-item">
+                  <div class="advantage-item__icon">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#known"
+                      ></use>
+                    </svg>
+                  </div>
+                  <h5 class="advantage-item__title">
+                    Profit is known in advance
+                  </h5>
+                  <div class="advantage-item__description">
+                    <p>
+                      Even before making a transaction, the bot calculates what
+                      the final profit will be, taking into account all costs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-dots swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"
+            >
+              <span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                tabindex="0"
+                role="button"
+                aria-label="Go to slide 1"
+                aria-current="true"
+              ></span>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+      </section>
+      <!---->
+      <section class="using" style="opacity: 0">
+        <div class="container">
+          <div class="using__row row">
+            <div class="using__col col col-12 col-md-6">
+              <h3 class="title using__title">Daily Profit Opportunities</h3>
+              <div class="using__text typography">
+                <p>
+                  The arbitrage bot simultaneously works with 12 cryptocurrency
+                  exchanges, scanning various pairs of cryptocurrencies and
+                  choosing the most profitable combinations for making a profit.
+                  CcbotTrade has managed to develop an arbitration bot that can
+                  act effectively and make decisions regardless of the market
+                  situation.
+                </p>
+                <p>
+                  Our specialists are constantly working on improving the bot,
+                  identifying shortcomings and updating the software. The
+                  mission of our company is to provide as many people as
+                  possible with the opportunity to get acquainted with arbitrage
+                  trading without the need for active participation and study of
+                  this topic.
+                </p>
+              </div>
+            </div>
+            <div class="using__col using__col--media col col-12 col-md-6">
+              <div
+                class="using-media"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  transform: scale(0.8, 0.8);
+                "
+              >
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/1.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/2.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/3.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/4.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/5.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/6.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/7.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/8.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/9.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/10.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/11.svg" alt=""
+                  /></a>
+                </div>
+                <div class="using-media__col">
+                  <a
+                    class="using-media__item"
+                    href="#"
+                    target="_blank"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform: translate(-15px, 0px);
+                      opacity: 0;
+                      visibility: hidden;
+                    "
+                  >
+                    <img src="images/using/12.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="using__row row">
+            <div class="using__col col col-12 col-md-4">
+              <div class="using-item">
+                <div class="using-item__icon">
+                  <svg class="svg-icon">
+                    <use href="icons/symbol/svg/sprite.symbol.svg#pie"></use>
+                  </svg>
+                </div>
+                <div class="using-item__content">
+                  <h5 class="using-item__title">Small entry barrier</h5>
+                  <div class="using-item__description">
+                    You do not need to have a large capital, you can start with
+                    the amount of $20.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="using__col col col-12 col-md-4">
+              <div class="using-item">
+                <div class="using-item__icon">
+                  <svg class="svg-icon">
+                    <use href="icons/symbol/svg/sprite.symbol.svg#wallet"></use>
+                  </svg>
+                </div>
+                <div class="using-item__content">
+                  <h5 class="using-item__title">Passive income</h5>
+                  <div class="using-item__description">
+                    Get profit every day without being distracted from your
+                    business.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="using__col col col-12 col-md-4">
+              <div class="using-item">
+                <div class="using-item__icon">
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#download"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="using-item__content">
+                  <h5 class="using-item__title">Instant withdrawal</h5>
+                  <div class="using-item__description">
+                    You don't have to wait to get paid. Withdrawing funds takes
+                    a couple of seconds.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -->
+      <section class="plans" id="pricing" style="opacity: 0">
+        <div class="container">
+          <div class="plans__top">
+            <h5 class="subtitle plans__subtitle">Earn with CcbotTrade</h5>
+            <h3 class="title plans__title">Investment proposal</h3>
+          </div>
+          <div
+            class="plans__swiper swiper-container swiper-no-swiping js-plans-swiper swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-e7d8edce2497f1039"
+              aria-live="polite"
+              style="transform: translate3d(0px, 0px, 0px)"
+            >
+              <div
+                class="swiper-slide swiper-slide-visible swiper-slide-active"
+                role="group"
+                aria-label="1 / 5"
+                style="margin-right: 15px"
+              >
+                <div
+                  class="plan plans__plan"
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, -15px);
+                    opacity: 0;
+                    visibility: hidden;
+                  "
+                >
+                  <div class="plan__col plan__col--name">
+                    <div class="plan__name">
+                      <div class="plan-icon">
+                        <svg class="svg-icon">
+                          <use href="images/icons/plans.svg?v=1.0#plans"></use>
+                        </svg>
+                      </div>
+                      Trial
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--percent">
+                    <div class="plan__percent">1% daily</div>
+                  </div>
+                  <div class="plan__col plan__col--profit">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#calendar"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Duration –</span> up to
+                        200%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Deposits –</span> min.
+                        $20 – max. $1000</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name"
+                          >Principal Return –</span
+                        >
+                        Anytime</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--btn">
+                    <a
+                      class="plan__btn btn"
+                      href="https://ccbot.trade/?ref=administrator"
+                      >Invest now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible swiper-slide-next"
+                role="group"
+                aria-label="2 / 5"
+                style="margin-right: 15px"
+              >
+                <div
+                  class="plan plans__plan"
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, -15px);
+                    opacity: 0;
+                    visibility: hidden;
+                  "
+                >
+                  <div class="plan__col plan__col--name">
+                    <div class="plan__name">
+                      <div class="plan-icon">
+                        <svg class="svg-icon">
+                          <use href="images/icons/plans.svg?v=1.0#plans"></use>
+                        </svg>
+                      </div>
+                      Initial
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--percent">
+                    <div class="plan__percent">1.5% daily</div>
+                  </div>
+                  <div class="plan__col plan__col--profit">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#calendar"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Duration –</span> up to
+                        200%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Deposits –</span> min.
+                        $1000 – max. $2500</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name"
+                          >Principal Return –</span
+                        >
+                        Anytime</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--btn">
+                    <a
+                      class="plan__btn btn"
+                      href="https://ccbot.trade/?ref=administrator"
+                      >Invest now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="3 / 5"
+                style="margin-right: 15px"
+              >
+                <div
+                  class="plan plans__plan"
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, -15px);
+                    opacity: 0;
+                    visibility: hidden;
+                  "
+                >
+                  <div class="plan__col plan__col--name">
+                    <div class="plan__name">
+                      <div class="plan-icon">
+                        <svg class="svg-icon">
+                          <use href="images/icons/plans.svg?v=1.0#plans"></use>
+                        </svg>
+                      </div>
+                      Average
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--percent">
+                    <div class="plan__percent">2% daily</div>
+                  </div>
+                  <div class="plan__col plan__col--profit">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#calendar"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Duration –</span> up to
+                        200%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Deposits –</span> min.
+                        $2500 – max. $5000</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name"
+                          >Principal Return –</span
+                        >
+                        Anytime</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--btn">
+                    <a
+                      class="plan__btn btn"
+                      href="https://ccbot.trade/?ref=administrator"
+                      >Invest now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="4 / 5"
+                style="margin-right: 15px"
+              >
+                <div
+                  class="plan plans__plan"
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, -15px);
+                    opacity: 0;
+                    visibility: hidden;
+                  "
+                >
+                  <div class="plan__col plan__col--name">
+                    <div class="plan__name">
+                      <div class="plan-icon">
+                        <svg class="svg-icon">
+                          <use href="images/icons/plans.svg?v=1.0#plans"></use>
+                        </svg>
+                      </div>
+                      Diamond
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--percent">
+                    <div class="plan__percent">2.5% daily</div>
+                  </div>
+                  <div class="plan__col plan__col--profit">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#calendar"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Duration –</span> up to
+                        200%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Deposits –</span> min.
+                        $5000 – max. $10000</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name"
+                          >Principal Return –</span
+                        >
+                        Anytime</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--btn">
+                    <a
+                      class="plan__btn btn"
+                      href="https://ccbot.trade/?ref=administrator"
+                      >Invest now</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="5 / 5"
+                style="margin-right: 15px"
+              >
+                <div
+                  class="plan plan--primary plans__plan"
+                  style="
+                    translate: none;
+                    rotate: none;
+                    scale: none;
+                    transform: translate(0px, -15px);
+                    opacity: 0;
+                    visibility: hidden;
+                  "
+                >
+                  <div class="plan__col plan__col--name">
+                    <div class="plan__name">
+                      <div class="plan-icon">
+                        <svg class="svg-icon">
+                          <use href="images/icons/plans.svg?v=1.0#plans"></use>
+                        </svg>
+                      </div>
+                      Business
+                      <svg class="svg-icon">
+                        <use
+                          href="icons/symbol/svg/sprite.symbol.svg#flash"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--percent">
+                    <div class="plan__percent">3% daily</div>
+                  </div>
+                  <div class="plan__col plan__col--profit">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#calendar"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Duration –</span> up to
+                        200%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name">Deposits –</span> min.
+                        $10000 – max. $500000</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="plan__col">
+                    <div class="plan__value">
+                      <div class="plan__value-icon">
+                        <svg class="svg-icon">
+                          <use
+                            href="icons/symbol/svg/sprite.symbol.svg#deposits"
+                          ></use>
+                        </svg>
+                      </div>
+                      <span
+                        ><span class="plan__value-name"
+                          >Principal Return –</span
+                        >
+                        Anytime</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan__col plan__col--btn">
+                    <a
+                      class="plan__btn btn"
+                      href="https://ccbot.trade/?ref=administrator"
+                      >Invest now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+      </section>
+      <!---->
+      <section class="calculate" id="calculate" style="opacity: 0">
+        <div class="current-curr-value" data-usd="1" data-usdt="1"></div>
+        <div class="container">
+          <div
+            class="calculate-profit"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: scale(0.8, 0.8);
+            "
+          >
+            <div class="calculate-profit__row row">
+              <div
+                class="calculate-profit__content col col-12 col-md-5"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  transform: translate(-15px, 0px);
+                  opacity: 0;
+                  visibility: hidden;
+                "
+              >
+                <div class="calculate-profit__icon">
+                  <svg class="svg-icon">
+                    <use href="icons/symbol/svg/sprite.symbol.svg#params"></use>
+                  </svg>
+                </div>
+                <h3 class="calculate-profit__title">Yield Calculator</h3>
+                <div class="calculate-profit__text typography">
+                  <p>
+                    Here you can see what daily income you can receive as well
+                    as the total amount of profit for the entire period of the
+                    deposit.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="calculate-profit__col col col-12 col-md-7"
+                style="
+                  translate: none;
+                  rotate: none;
+                  scale: none;
+                  transform: translate(-15px, 0px);
+                  opacity: 0;
+                  visibility: hidden;
+                "
+              >
+                <div class="calculate-profit__grid">
+                  <div class="calc-item calculate-profit__grid-item">
+                    <div class="calc-item__count">1</div>
+                    <div class="calc-item__label">Choose currency</div>
+                    <select id="calc_plan" class="form-control">
+                      <option value="1">1% daily untill reach 200%</option>
+                      <option value="2">1.5% daily untill reach 200%</option>
+                      <option value="3">2% daily untill reach 200%</option>
+                      <option value="4">2.5% daily untill reach 200%</option>
+                      <option value="5">3% daily untill reach 200%</option>
+                    </select>
+                  </div>
+                  <div class="calc-item calculate-profit__grid-item">
+                    <div class="calc-item__count">2</div>
+                    <div class="calc-item__label">Enter amount</div>
+                    <div class="calc-item__field">
+                      <input type="text" id="inv_amount" value="20" />
+                      <div class="calc-item__field-currency calc__currency">
+                        USDT
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="calc-item calc-item--center calculate-profit__grid-item"
+                  >
+                    <div class="calc-item__element">
+                      <div class="calc-item__label">Daily Earning</div>
+                      <input
+                        style="
+                          text-align: center;
+                          font-size: 1.6rem;
+                          font-weight: bold;
+                          padding: 10px;
+                        "
+                        type="text"
+                        id="daily_return"
+                        value="0.20"
+                      />
+
+                      <div class="calc-item__currency calc__currency">USDT</div>
+                    </div>
+                    <div class="calc-item__element">
+                      <div class="calc-item__label">Total Returne</div>
+                      <input
+                        style="
+                          text-align: center;
+                          font-size: 1.6rem;
+                          font-weight: bold;
+                          padding: 10px;
+                        "
+                        type="text"
+                        id="total_return"
+                        value="40"
+                      />
+                      <div class="calc-item__currency calc__currency">USDT</div>
+                    </div>
+
+                    <div class="calc-item__element">
+                      <div class="calc-item__label">Net Profit</div>
+                      <input
+                        style="
+                          text-align: center;
+                          font-size: 1.6rem;
+                          font-weight: bold;
+                          padding: 10px;
+                        "
+                        type="text"
+                        id="net_profit"
+                        value="40"
+                      />
+                      <div class="calc-item__currency calc__currency">USDT</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        select#calc_plan {
+          font-size: 1.4rem;
+          background: transparent;
+        }
+        .calc-item.calculate-profit__grid-item {
+          width: 95%;
+        }
+        input {
+          width: 100%;
+        }
+      </style>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="/calculator-7.js"></script>
+
+      <section class="calculate" id="calculate" style="opacity: 0">
+        <div class="current-curr-value" data-usd="1" data-usdt="1"></div>
+        <div class="container">
+          <h3
+            style="text-align: center; margin-bottom: 40px"
+            class="title plans__title"
+          >
+            Latest Status
+          </h3>
+
+          <div class="wd-container">
+            <div class="wd-content">
+              <!-- Image Table: Start -->
+              <!-- <table cellspacing=0 cellpadding=2 border=0 width=100%>
+ <tr>
+  <th colspan=4 class=title>Last Deposits</th>
+</tr>
+<tr class="status-list-item">
+ <td class=menutxt><img style="width:35px" src="assets/payment/82.svg"></td>
+ <td class=menutxt>$150.00</td>
+ </td>
+</tr>
+</table> -->
+            </div>
+            <div class="wd-content">
+              <!-- Image Table: Start -->
+              <!-- <table cellspacing=0 cellpadding=2 border=0 width=100%><tr>
+  <th colspan=4 class=title>Last Withdrawals</th>
+</tr>
+
+<tr class="status-list-item">
+ <td class=menutxt><img style="width:35px" src="assets/payment/92.svg"></td>
+ <td class=menutxt>$49.95</td>
+ </td>
+</tr>
+</table> -->
+            </div>
+          </div>
+
+          <style>
+            .wd-container {
+              display: flex;
+              justify-content: center;
+              /* align-items: center; */
+              text-align: center;
+              padding: 10px;
+              border-radius: 7px;
+              border: 1px solid #ccc;
+            }
+            .wd-content {
+              padding: 5px;
+              border: 1px solid #ccc;
+              border-radius: 7px;
+              margin: 10px;
+              width: 100%;
+            }
+
+            .wd-title {
+              font-size: 2rem;
+              padding: 5px 10px;
+              width: 100%;
+            }
+
+            .status-list-item {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+              padding: 5px;
+              border-bottom: 1px solid #ccc;
+            }
+
+            th.title {
+              text-align: center;
+              padding: 5px 10px;
+              background: #67699d;
+              color: #fff;
+              border-radius: 4px;
+              margin-bottom: 7px !important;
+              font-size: 1.6rem;
+            }
+
+            @media screen and (max-width: 650px) {
+              .wd-container {
+                flex-wrap: wrap;
+              }
+              .status-list-item {
+                flex-direction: column;
+              }
+            }
+          </style>
+        </div>
+      </section>
+
+      <!---->
+      <section class="gray-wrapper">
+        <!---->
+        <section class="earn" id="referral" style="opacity: 0">
+          <div class="container">
+            <div class="earn__row row">
+              <div class="earn__col col col-12 col-md-6">
+                <div class="earn__blocks">
+                  <div class="earn-item earn__block">
+                    <div class="earn-item__content">
+                      <div class="earn-item__title">
+                        Level 4 <span class="earn-item__separator"></span>
+                        Level 5
+                      </div>
+                      <div class="earn-item__desc">
+                        You will earn 1% for every invited user
+                      </div>
+                    </div>
+                    <div class="earn-item__value">1%</div>
+                  </div>
+                  <div
+                    class="earn-item earn-item--gray earn-item--small earn__block"
+                  >
+                    <div class="earn-item__content">
+                      <div class="earn-item__title">Level 3</div>
+                      <div class="earn-item__desc">
+                        You will earn 2% for every invited user
+                      </div>
+                    </div>
+                    <div class="earn-item__value">2%</div>
+                  </div>
+                  <div
+                    class="earn-item earn-item--primary earn-item--small earn__block"
+                  >
+                    <div class="earn-item__content">
+                      <div class="earn-item__title">Level 2</div>
+                      <div class="earn-item__desc">
+                        You will earn 3% for every invited user
+                      </div>
+                    </div>
+                    <div class="earn-item__value">3%</div>
+                  </div>
+                  <div
+                    class="earn-item earn-item--primary-light earn-item--large earn-item--center earn__block"
+                  >
+                    <div class="earn-item__content">
+                      <div class="earn-item__title">Level 1</div>
+                      <div class="earn-item__value">5%</div>
+                      <div class="earn-item__desc">
+                        You will earn 5% for every invited user
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="earn__col col col-12 col-md-6">
+                <div class="earn__content">
+                  <h5 class="subtitle earn__subtitle">Affiliate program</h5>
+                  <h3 class="title earn__title">5 level referral program</h3>
+                  <div class="earn__description typography">
+                    <p>
+                      Invite your friends and get rewarded from every active
+                      investor.
+                    </p>
+                  </div>
+                  <div class="earn__buttons">
+                    <a
+                      class="btn btn--large earn__btn"
+                      href="https://ccbot.trade/?ref=administrator"
+                      ><span>Join now</span>
+                      <svg class="svg-icon">
+                        <use
+                          href="icons/symbol/svg/sprite.symbol.svg#arrow-right-circle"
+                        ></use></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!---->
+
+        <section class="faq" id="faq" style="opacity: 0">
+          <div class="container">
+            <div class="faq__top">
+              <h5 class="subtitle faq__subtitle">FAQs</h5>
+              <h3 class="title faq__title">Frequently asked questions</h3>
+            </div>
+            <div class="faq__block accordion">
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-1">
+                  <span class="accordion-title"
+                    >What is the minimum amount for a deposit?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-1">
+                  <div class="typography">
+                    <p>You can start investing from the amount: $20.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-2">
+                  <span class="accordion-title"
+                    >What is the minimum withdrawal amount?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-2">
+                  <div class="typography">
+                    <p>The minimum withdrawal amount is: $5.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-3">
+                  <span class="accordion-title"
+                    >What is the term of the deposit?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-3">
+                  <div class="typography">
+                    <p>
+                      until you receive 100% Net profite of the total
+                      investment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-4">
+                  <span class="accordion-title"
+                    >How quickly will I receive a payout after a request?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-4">
+                  <div class="typography">
+                    <p>Withdrawals are instant.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-5">
+                  <span class="accordion-title"
+                    >Can I withdraw principal capital (initial investment)
+                    ?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-5">
+                  <div class="typography">
+                    <p>
+                      Yes, you can withdraw your principal capital anytime
+                      through our Telegram Customers support and you will be
+                      charge withdrawal fees of 10% of your investment. The
+                      withdrawal request will take up to 48 hours as the team
+                      has to adjust their invested funds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-6">
+                  <span class="accordion-title"
+                    >What should I do if I forgot my account password?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-6">
+                  <div class="typography">
+                    <p>
+                      Click the "recover password" button in the authorization
+                      window and follow the instructions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="accordion-item">
+                            <button class="js-toggle" data-container="toggle-6"><span class="accordion-title">How can I
+                                    change the wallet
+                                    for withdrawing funds?</span><span class="accordion-icon" aria-hidden="true">
+                                    <svg class="svg-icon">
+                                        <use href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"></use>
+                                    </svg></span></button>
+                            <div class="accordion-content" id="toggle-6">
+                                <div class="typography">
+                                    <p>You can login your account the go to setting area you can delete old one and set new one the save the settings..</p>
+                                </div>
+                            </div>
+                        </div>-->
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-7">
+                  <span class="accordion-title">Can I change the inviter?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-7">
+                  <div class="typography">
+                    <p>Yes, you need to contact support.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-8">
+                  <span class="accordion-title">What is the company doing?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-8">
+                  <div class="typography">
+                    <p>
+                      The CcbotTrade company is engaged in cryptocurrency
+                      arbitrage using an arbitrage bot of its own design. We
+                      apply different strategies to get the maximum profit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-9">
+                  <span class="accordion-title"
+                    >Does the company charge commissions when creating a deposit
+                    and withdrawing funds?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-9">
+                  <div class="typography">
+                    <p>No, we do not take commission.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="js-toggle" data-container="toggle-10">
+                  <span class="accordion-title"
+                    >How often can I make a profit after making a deposit?</span
+                  ><span class="accordion-icon" aria-hidden="true">
+                    <svg class="svg-icon">
+                      <use
+                        href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom"
+                      ></use></svg
+                  ></span>
+                </button>
+                <div class="accordion-content" id="toggle-10">
+                  <div class="typography">
+                    <p>You can earn profit every day.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="coins">
+        <div class="container">
+          <div
+            class="swiper-container swiper-no-swiping js-coins-swiper swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress swiper-backface-hidden"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-1a5e3c516d7c5753"
+              aria-live="polite"
+            >
+              <div
+                class="swiper-slide swiper-slide-visible swiper-slide-active"
+                role="group"
+                aria-label="1 / 7"
+                style="width: 162.286px"
+              >
+                <div class="coins-item">
+                  <img src="images/currency/doge.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible swiper-slide-next"
+                role="group"
+                aria-label="2 / 7"
+                style="width: 162.286px"
+              >
+                <div class="coins-item">
+                  <img src="images/currency/eth.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="3 / 7"
+                style="width: 162.286px"
+              >
+                <div class="coins-item">
+                  <img src="images/currency/bnb.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="4 / 7"
+                style="width: 162.286px"
+              >
+                <div class="coins-item">
+                  <img src="images/currency/trn.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="5 / 7"
+                style="width: 162.286px"
+              >
+                <div class="coins-item">
+                  <img src="images/currency/btc.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="6 / 7"
+                style="width: 162.286px"
+              >
+                <div class="coins-item">
+                  <img src="images/currency/usdt.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-visible"
+                role="group"
+                aria-label="7 / 7"
+                style="width: 162.286px"
+              >
+                <div class="coins-item">
+                  <img src="images/currency/ltc.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+      </section>
+      <div class="mobile-menu visible-lg">
+        <div class="mobile-menu__top visible-sm">
+          <div class="language-module js-dropdown">
+            <div class="language-module__link">
+              <span>Eng</span>
+              <svg class="svg-icon">
+                <use
+                  href="icons/symbol/svg/sprite.symbol.svg#arrow-bottom-select"
+                ></use>
+              </svg>
+            </div>
+            <div class="language-module__dropdown">
+              <div class="language-module__dropdown-cross">
+                <svg class="svg-icon">
+                  <use href="icons/symbol/svg/sprite.symbol.svg#close"></use>
+                </svg>
+              </div>
+              <ul class="language-module__dropdown-list" data-simplebar="init">
+                <div class="simplebar-wrapper" style="margin: 0px">
+                  <div class="simplebar-height-auto-observer-wrapper">
+                    <div class="simplebar-height-auto-observer"></div>
+                  </div>
+                  <div class="simplebar-mask">
+                    <div
+                      class="simplebar-offset"
+                      style="right: 0px; bottom: 0px"
+                    >
+                      <div
+                        class="simplebar-content-wrapper"
+                        tabindex="0"
+                        role="region"
+                        aria-label="scrollable content"
+                        style="height: auto; overflow: hidden"
+                      >
+                        <div class="simplebar-content" style="padding: 0px">
+                          <li>
+                            <a href="?language=default">
+                              <img
+                                src="images/country/united-kingdom.svg"
+                                alt=""
+                              /><span>English</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=de">
+                              <img
+                                src="images/country/germany.svg"
+                                alt=""
+                              /><span>Deutch</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=ru">
+                              <img
+                                src="images/country/russia.svg"
+                                alt=""
+                              /><span>Russian</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=sp">
+                              <img src="images/country/spain.svg" alt="" /><span
+                                >Spanish</span
+                              ></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=vi">
+                              <img
+                                src="images/country/vietnam.svg"
+                                alt=""
+                              /><span>Vietnamese</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=ch">
+                              <img src="images/country/china.svg" alt="" /><span
+                                >Chinese</span
+                              ></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=" pt="">
+                              <img
+                                src="images/country/portugal.svg"
+                                alt=""
+                              /><span>Portuguese</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=ar">
+                              <img
+                                src="images/country/saudi-arabia.svg"
+                                alt=""
+                              /><span>Arab</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=tu">
+                              <img
+                                src="images/country/turkey.svg"
+                                alt=""
+                              /><span>Turkish</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=jp">
+                              <img src="images/country/japan.svg" alt="" /><span
+                                >Japanese</span
+                              ></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=it">
+                              <img src="images/country/italy.svg" alt="" /><span
+                                >Italian</span
+                              ></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=fr">
+                              <img
+                                src="images/country/france.svg"
+                                alt=""
+                              /><span>French</span></a
+                            >
+                          </li>
+                          <li style="display: none">
+                            <a href="?language=in">
+                              <img
+                                src="images/country/indonesia.svg"
+                                alt=""
+                              /><span>Indonesian</span></a
+                            >
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="simplebar-placeholder"
+                    style="width: 0px; height: 0px"
+                  ></div>
+                </div>
+                <div
+                  class="simplebar-track simplebar-horizontal"
+                  style="visibility: hidden"
+                >
+                  <div
+                    class="simplebar-scrollbar"
+                    style="width: 0px; display: none"
+                  ></div>
+                </div>
+                <div
+                  class="simplebar-track simplebar-vertical"
+                  style="visibility: hidden"
+                >
+                  <div
+                    class="simplebar-scrollbar"
+                    style="height: 0px; display: none"
+                  ></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <a class="link" href="/login">
+            <svg class="svg-icon">
+              <use href="icons/symbol/svg/sprite.symbol.svg#lock"></use></svg
+            ><span>Login</span></a
+          >
+        </div>
+        <div class="block-menu">
+          <ul class="block-menu__list">
+            <li>
+              <a class="block-menu__link" href="?a=home#about">About Us</a>
+            </li>
+            <li>
+              <a class="block-menu__link" href="?a=home#pricing">Pricing</a>
+            </li>
+            <li>
+              <a class="block-menu__link" href="?a=home#calculate">Calculate</a>
+            </li>
+
+            <li>
+              <a class="block-menu__link" href="?a=home#referral">Referral</a>
+            </li>
+            <li><a class="block-menu__link" href="?a=home#faq">FAQ</a></li>
+            <li><a class="block-menu__link" href="?a=support">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="layout__overlay body-overlay"></div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row row">
+            <div class="footer__col col col-lg-3">
+              <a class="footer__logo" href="/"
+                ><img src="images/cc-logo.png" alt=""
+              /></a>
+              <div class="footer__text">
+                <p>
+                  Arbitrage trading of cryptocurrencies. For questions regarding
+                  cooperation, please contact the company's support service.
+                </p>
+              </div>
+            </div>
+            <div class="footer__col col-lg-6">
+              <ul class="footer__links">
+                <li>
+                  <a class="footer__link" href="?a=home#about">About Us</a>
+                </li>
+                <li>
+                  <a class="footer__link" href="?a=home#pricing"
+                    >Profitability</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__link" href="?a=home#calculate"
+                    >Calculator</a
+                  >
+                </li>
+
+                <li>
+                  <a class="footer__link" href="?a=home#referral"
+                    >For partners</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__link" href="?a=support" data-type="inline"
+                    >Contacts</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="footer__link footer__link--primary"
+                    href="https://ccbot.trade/?ref=administrator"
+                    >Join us</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__link footer__link--primary" href="/login"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col col-lg-3">
+              <a
+                class="btn btn--large footer__btn"
+                href="?a=support"
+                data-type="inline"
+              >
+                <span>Contact us</span>
+                <svg class="svg-icon">
+                  <use
+                    href="icons/symbol/svg/sprite.symbol.svg#arrow-right-circle"
+                  ></use></svg
+              ></a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div>
+              <div class="connect2">support@ccbot.trade</div>
+              <div class="connect" style="margin-top: 0.5rem">
+                <a
+                  class="connect__link"
+                  href="https://t.me/+Xz_6evnXevA4YTdk"
+                  target="_blank"
+                >
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#telegram"
+                    ></use></svg
+                  ><span>Telegram Channel</span></a
+                ><a
+                  class="connect__link connect__link--opacity"
+                  href="https://t.me/Ccbotsupport"
+                  target="_blank"
+                >
+                  <svg class="svg-icon">
+                    <use
+                      href="icons/symbol/svg/sprite.symbol.svg#telegram"
+                    ></use></svg
+                  ><span>Telegram Support</span></a
+                >
+              </div>
+            </div>
+            <div class="footer__copyright">
+              © 2023, CcbotTrade. All rights reserved.
+            </div>
+            <!-- <ul class="footer__small-links">
+                        <li> <a class="footer__small-link" href="?a=rules">Terms of service</a>
+                        </li>
+                    </ul>-->
+          </div>
+        </div>
+      </footer>
+
+      <div class="scroll-top" style="display: none">
+        <img src="/images/icons/arrow-top.svg?v=1.0" alt="scroll top" />
+      </div>
+
+      <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+      <script src="js/libs/Notifications.min.js"></script>
+      <script src="js/common.js"></script>
+      <script src="assets/more.js?v=1.01"></script>
+    </main>
+  </body>
+
+  <style>
+    @media (max-width: 750px) {
+      .calculate-profit__grid {
+        margin-left: -17px;
+      }
+    }
+  </style>
+</html>
