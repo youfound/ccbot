@@ -502,12 +502,12 @@ const common = () => {
       if (star <= stars) {
         $(this).append(`<span class="stars__star is-active" data-star="${star}">
         <svg class="svg-icon">
-          <use href="icons/symbol/svg/sprite.symbol.svg#star"></use>
+          <use href="/icons/symbol/svg/sprite.symbol.svg#star"></use>
         </svg></span>`);
       } else {
         $(this)
           .append(`<span class="stars__star" data-star="${star}"><svg class="svg-icon">
-          <use href="icons/symbol/svg/sprite.symbol.svg#star"></use>
+          <use href="/icons/symbol/svg/sprite.symbol.svg#star"></use>
         </svg></span>`);
       }
     }
